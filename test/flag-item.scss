@@ -1,0 +1,40 @@
+.flag-item {
+    position: relative;
+    margin-bottom: units(6);
+    @include at-media(tablet) {
+        @include grid-col(9);
+    }
+    .flag-item-title {
+        position: relative;
+        overflow: hidden;
+        .flag-title {
+            background: color($theme-color-base-dark);
+            color: color($theme-text-reverse-color);
+            position: relative;
+            z-index: 2;
+            margin: 0;
+            padding: units(2);
+            max-width: 50%;
+        }
+    }
+    .flag-item-content {
+        background: color($theme-color-base-lighter);
+        padding: units(4) units(3) units(3) units(3);
+        margin-top: units(-2);
+        margin-left: units(4);
+        position: relative;
+        z-index: 1;
+        &:before {
+            // Triangle
+            content: "";
+            display: block;
+            position: absolute;
+            top: units(2);
+            left: units(-4);
+            width: 0;
+            height: 0;
+            border-top: units(4) solid color($theme-color-base-darker);
+            border-left: units(4) solid transparent;
+        }
+    }
+}

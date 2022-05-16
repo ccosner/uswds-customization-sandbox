@@ -1,0 +1,14 @@
+@use "uswds-core" with (
+    // settings list
+    $theme-show-compile-warnings: false,
+    $theme-show-notifications: false,
+
+    $theme-grid-container-max-width: "desktop-lg",
+
+    $theme-respect-user-font-size: true,
+    $theme-font-type-sans: "source-sans-pro",
+    $theme-font-role-ui: "sans",
+    $theme-type-scale-sm: 5,
+    $theme-body-font-size: "sm",
+    $theme-body-line-height: 5
+);
